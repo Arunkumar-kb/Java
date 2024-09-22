@@ -62,16 +62,27 @@
 .i-filed{
 	display:flex;
 	justify-content : space-between;
-	width : 350px
+	width : 500px;
 }
 .i-filed label{
 	text-transform : uppercase;
 	font-size : 16px;
 }
-.i-filed input{
+.i-filed input,#dept{
 	border : 1px solid #ccc;
 	width : 200px;
 	padding : 2px 5px;
+	border-radius : 5px;
+}
+.i-filed .radio{
+	width: 200px;
+	display : flex;
+	justify-content : space-between;
+	padding : 4px;
+}
+.i-filed input[type=radio]{
+	border : 1px solid #ccc;
+	width : 20px;
 	border-radius : 5px;
 }
 .title h3{
@@ -95,4 +106,37 @@
 }
 .msg{
 	text-align: center;
+}
+/* profile design */
+.profile{
+	dipslay : flex;
+	width : 650px;
+	border : 2px solid #ccc;
+	padding : 20px;
+	row-gap : 10px;
+}
+.profile .heading h3{
+	text-transform : captilize;
+	font-size : 23px;
+	font-weight : 500;
+	width : 100%;
+	letter-spacing : 1px;
+}
+.profile .p-filed{
+	display : flex;
+	align-items : center;
+	justify-content : space-between;
+	margin : 15px 0px;
+}
+.p-filed label{
+	font-size : 20px;
+	text-transform : captilize;
+
+}
+.p-filed input{
+	border : none;
+	font-size : 20px;
+	text-transform : captilize;
+	background : none;
+	color : black;
 }

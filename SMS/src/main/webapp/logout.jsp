@@ -8,8 +8,8 @@
 </head>
 <body>
 <%
-session.removeAttribute("Email");
-response.sendRedirect("index.jsp");
+session.removeAttribute("rollno");
+response.sendRedirect("header.jsp");
 %>
 </body>
 </html>

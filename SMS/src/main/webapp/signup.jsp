@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<jsp:include page="index.jsp"></jsp:include>
+<jsp:include page="header.jsp"></jsp:include>
 <form action="Register" method="get">
 <div class="container">
 <div class="signup">
@@ -17,12 +17,36 @@
 </div>
 
 <div class="i-filed">
-<label>user name :</label> 
-<input type="text" name="uname">
+<label>student name :</label> 
+<input type="text" name="sname">
+</div>
+<div class="i-filed">
+<label>roll number :</label> 
+<input type="text" name="rollno">
 </div>
 <div class="i-filed">
 <label>email : </label>
 <input type="email" name="email">
+</div>
+<div class="i-filed">
+<label>mobile number :</label> 
+<input type="text" name="mobile">
+</div>
+<div class="i-filed">
+<label for="dept">course :</label> 
+<select name="dept" id="dept">
+<option value="MCA">MCA</option>
+<option value="BCA">BCA</option>
+</select>
+</div>
+<div class="i-filed">
+<label>gender :</label> 
+<div class="radio">
+<input type="radio" name="gender" id="male" value="male">
+<label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="female">
+<label for="female">female</label>
+</div>
 </div>
 <div class="i-filed">
 <label>password :</label>

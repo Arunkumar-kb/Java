@@ -8,11 +8,11 @@
 </head>
 <body>
 <%
-if(session.getAttribute("Email")==null){
+if(session.getAttribute("rollno")==null){
 	response.sendRedirect("login.jsp");
 }
 %>
-<jsp:include page="index.jsp"></jsp:include>
+<jsp:include page="header.jsp"></jsp:include>
 <h1>Login successfully</h1>
 </body>
 </html>

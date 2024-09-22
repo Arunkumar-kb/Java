@@ -12,9 +12,9 @@
 		<div class="logo">the american college</div>
 		<ul class="nav-links">
 			<li><a href="#">Home</a></li>
-			<li><a href="welcome.jsp">About</a></li>
-			<li><a href="#">Services</a></li>
-			<%if(session.getAttribute("Email")==null){%>
+			<li><a href="profile.jsp">Profile</a></li>
+			<li><a href="#">Result</a></li>
+			<%if(session.getAttribute("rollno")==null){%>
 				<li><a href="login.jsp">Login</a></li>
 			<%} else {%>
 				<li><a href="logout.jsp">Logout</a></li>

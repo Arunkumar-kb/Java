@@ -8,12 +8,12 @@
 <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-<jsp:include page="index.jsp"></jsp:include>
+<jsp:include page="header.jsp"></jsp:include>
 <div class='container'>
 <div class='sign-in'>
 student login form
 <form action="signin" method="get">
-email : <input type="email" name="email"><br>
+rollno : <input type="text" name="rollno"><br>
 password : <input type="password" name="pwd"><br>
 <input type="submit" value="login">
 

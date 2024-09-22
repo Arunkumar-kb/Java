@@ -22,14 +22,16 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		    String email = request.getParameter("email");
+		    String rollno = request.getParameter("rollno");
 	        String password = request.getParameter("pwd");
 	        
 	        // Use utility class to validate user credentials
-	        if(DBUtil.validateUser(email, password)) {
+	        if(DBUtil.validateUser(rollno, password)) {
 	        	HttpSession session = request.getSession();
-	            session.setAttribute("Email", email);
-	            response.sendRedirect("welcome.jsp");
+	            session.setAttribute("rollno", rollno);
+	            RequestDispatcher dispatcher = request.getRequestDispatcher("/profileDao");
+	            dispatcher.forward(request, response);
+//	            response.sendRedirect("welcome.jsp");
 	        } else {
 	            response.sendRedirect("login.jsp?error=Invalid email or password");
 	        }
